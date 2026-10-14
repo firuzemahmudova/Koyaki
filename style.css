@@ -161,7 +161,7 @@ a {
       rgba(0, 0, 0, 0.45) 45%, 
       rgba(0, 0, 0, 0) 75%
     ), 
-    url('../images/delicious-japanese-sushi-rolls-restaurant.jpg') center/cover no-repeat;
+    url('/images/delicious-japanese-sushi-rolls-restaurant.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
 }
