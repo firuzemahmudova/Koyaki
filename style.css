@@ -201,14 +201,12 @@ a {
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* AÃ§Ä±qlama MÉ™tni */
 .hero-content p {
   font-size: 16px;
   line-height: 1.6;
   color: #e0e0e0;
 }
 
-/* HÆRÆKÆTLÄ° ÆLAVÆ (Fade-in AnimasiyasÄ±) */
 @keyframes fadeInRight {
   from {
     opacity: 0;
