@@ -359,3 +359,21 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const widget = document.querySelector(".sticky-discount-widget");
+  const footer = document.querySelector("footer");
+
+  if (!widget || !footer) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    widget.classList.toggle(
+      "hide-on-footer",
+      entries[0].isIntersecting
+    );
+  }, {
+    threshold: 0
+  });
+
+  observer.observe(footer);
+});
