@@ -172,27 +172,26 @@ a {
   margin: 0 auto;
   padding: 0 40px;
   display: flex;
-  justify-content: flex-end; /* MÉ™tni saÄŸa Ã§É™kir */
+  justify-content: flex-end; 
 }
 
-/* SaÄŸdakÄ± MÉ™tn Bloku */
+
 .hero-content {
   max-width: 480px;
   text-align: left;
   color: #ffffff;
 }
 
-/* KiÃ§ik üst baÅŸlÄ±q */
+
 .sub-title {
   font-size: 13px;
   letter-spacing: 3px;
-  color: #f9f5f3; /* QÄ±zÄ±lÄ±/narÄ±ncÄ± ton */
+  color: #f9f5f3; 
   font-weight: 600;
   display: block;
   margin-bottom: 12px;
 }
 
-/* Æsas BaÅŸlÄ±q */
 .hero-content h1 {
   font-size: 44px;
   font-family: 'Playfair Display', serif;
