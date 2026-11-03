@@ -5,26 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Impressum – KOYAKI Restaurant</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header class="legal-header">
-    <div class="legal-header-inner">
-
-        <a href="index.html" class="legal-logo">
-            <img src="images/koyaki-logo.png" alt="KOYAKI">
-        </a>
-
-        <nav class="legal-nav">
-            <a href="index.html">Startseite</a>
-            <a href="index.html#about">Über Uns</a>
-            <a href="index.html#speisekarte">Speisekarte</a>
-            <a href="index.html#kontakt">Kontakt</a>
-        </nav>
-
+    <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/koyaki-logo.png" alt="Koyaki" class="logo-img">
+        <span class="logo-subtitle">Sushi &amp; Asian Fusion</span>
+      </a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html#start">Start</a>
+        <a href="index.html#speisekarte">Speisekarte</a>
+        <a href="index.html#about">&Uuml;ber uns</a>
+        <a href="index.html#contact">Anfahrt</a>
+        <a href="https://koyaki.order-smart.de" class="nav-btn-online">Online Bestellen</a>
+      </div>
     </div>
-</header>
+  </nav>
 
 
 <section class="legal-hero">
@@ -110,5 +113,65 @@
     </div>
   </section>
 
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-col footer-col-logo">
+        <a href="index.html" class="footer-logo">
+          <img src="images/koyaki-logo.png" alt="KOYAKI Sushi &amp; asiatische K&uuml;che">
+          <span class="footer-tagline">Sushi &amp; Asiatische K&uuml;che</span>
+        </a>
+      </div>
+      <div class="footer-col">
+        <ul class="footer-list">
+          <li><a href="index.html#speisekarte">Speisekarte</a></li>
+          <li><a href="speisekarte.pdf" target="_blank" rel="noopener noreferrer">Speisekarte als PDF &rarr;</a></li>
+          <li><a href="index.html#uber-uns">&Uuml;ber uns</a></li>
+          <li><a href="index.html#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-title">Bestellen &amp; Reservieren</h4>
+        <ul class="footer-list">
+          <li><a href="https://www.restablo.de/restaurant/koyaki-sushi-bad-oldesloe.html" target="_blank" rel="noopener">Tisch reservieren</a></li>
+          <li><a href="https://koyaki.order-smart.de" target="_blank" rel="noopener">Online bestellen</a></li>
+          <li><a href="https://www.lieferando.de/speisekarte/koyaki-hamburger-strasse" target="_blank" rel="noopener">Lieferando</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-title">Rechtliches</h4>
+        <ul class="footer-list">
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+        <div class="footer-social">
+          <a href="https://www.tripadvisor.de/Restaurant_Review-g676370-d26671603-Reviews-Koyaki_Sushi_Asian_Fusion-Bad_Oldesloe_Schleswig_Holstein.html" target="_blank" rel="noopener" aria-label="TripAdvisor"><i class="fa-brands fa-tripadvisor"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; KOYAKI Sushi &amp; Asian Fusion. Alle Rechte vorbehalten.</p>
+    </div>
+    <div class="footer-credit">
+      Webdesign by
+      <a href="https://www.firmadesign.art" target="_blank" rel="noopener noreferrer">Firma Design &rarr;</a>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const btn = document.getElementById('mobileMenuBtn');
+      const links = document.getElementById('navLinks');
+      if (btn && links) {
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          links.classList.toggle('show');
+        });
+        links.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => links.classList.remove('show'));
+        });
+      }
+    });
+  </script>
 </body>
 </html>

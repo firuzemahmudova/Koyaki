@@ -161,12 +161,11 @@ a {
       rgba(0, 0, 0, 0.45) 45%, 
       rgba(0, 0, 0, 0) 75%
     ), 
-    url('/images/delicious-japanese-sushi-rolls-restaurant.jpg') center/cover no-repeat;
+    url('/images/delicious-japanese-sushi-rolls-restaurant.webp') center/cover no-repeat;
   display: flex;
   align-items: center;
 }
 
-/* Konteyner - MÉ™tni SAÄžA sÄ±xÄ±r */
 .hero-container {
   width: 100%;
   max-width: 1200px;
