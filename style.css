@@ -3408,3 +3408,30 @@ header,
     width: max-content;
   }
 }
+
+
+.restablo-btn {
+  display: inline-block;
+  width: 220px;
+  max-width: 100%;
+  margin-top: 24px;
+  transition: transform 0.2s ease;
+}
+
+.restablo-btn img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.restablo-btn:hover {
+  transform: scale(1.04);
+}
+
+@media (max-width: 768px) {
+  .restablo-btn {
+    width: 190px;
+    margin-top: 18px;
+  }
+}
